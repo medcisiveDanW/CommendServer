@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Number of Patient Sessions By Category</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href="../css/reports/reports_child.css"  />
+        <link rel="stylesheet" type="text/css" href="../css/newBlue/jquery-ui-1.8.11.custom.css"  />
+        <link rel="stylesheet" type="text/css" href="../css/demo_page.css" />
+        <link rel="stylesheet" type="text/css" href="../css/demo_table.css" />
+        <link rel="stylesheet" type="text/css" href="../css/demo_table_jui.css" />
+        <script language="javascript" type="text/javascript" src="../javascript/root/jquery-1.5.1.min.js"></script>
+        <script language="javascript" type="text/javascript" src="../javascript/root/jquery-ui-1.8.11.custom.min.js"></script>
+        <script language="javascript" type="text/javascript" src="../javascript/root/jquery-popup.js"></script>
+        <script language="javascript" type="text/javascript" src="../javascript/root/jquery.dataTables.min.js"></script>
+        <script language="javascript" type="text/javascript" src="../javascript/root/Utility.js"></script>
+        <script language="javascript" type="text/javascript" src="../javascript/reports/EncounterPatients.js"></script>
+        <script language="javascript" type="text/javascript">
+            var manager = new EncounterPatients();
+            socket.put('buttons',{});
+            socket.put('width',1050);
+            socket.put('height',450);
+            $(function() {
+                manager.load();
+            });
+        </script>
+    </head>
+    <body >
+        <div style="width: 100%; height: 20px;" >
+            <div style="float: left;" >
+                <span style="font-weight:bold;">Provider Name: <a id="providerNameAId"></a></span>
+            </div>
+            <div style="float: right;" >
+                <span style="font-weight:bold;"><a id="dateRangeAId"></a></span>
+            </div>
+        </div>
+        <div style="width: 100%;">
+            <div id="providerPatientEncounterTabsId">
+                <ul>
+                    <li><a href="#allEncountersTabId">All Encounters</a></li>
+                    <li><a href="#providerEncountersTabId">Provider Encounters</a></li>
+                </ul>
+                <div id="allEncountersTabId"><div id="allEncountersTableDivId"></div></div>
+                <div id="providerEncountersTabId"><div id="providerEncountersTableDivId"></div></div>
+            </div>
+        </div>
+        <div id="clinicTimePopupDivId" style="display: none;"></div>
+    </body>
+</html>

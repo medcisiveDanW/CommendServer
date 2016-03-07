@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Productivity</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" type="text/css" href="../css/reports/reports_child.css" />
+        <link rel="stylesheet" type="text/css" href="../css/newBlue/jquery-ui-1.8.11.custom.css"  />
+        <link rel="stylesheet" type="text/css" href="../css/demo_page.css" />
+        <link rel="stylesheet" type="text/css" href="../css/demo_table.css" />
+        <link rel="stylesheet" type="text/css" href="../css/demo_table_jui.css" />
+
+        <script language="javascript" type="text/javascript" src="../javascript/root/jquery-1.5.1.min.js"></script>
+        <script language="javascript" type="text/javascript" src="../javascript/root/jquery-ui-1.8.11.custom.min.js"></script>
+        <script language="javascript" type="text/javascript" src="../javascript/root/date.js"></script>
+        <script language="javascript" type="text/javascript" src="../javascript/root/jquery.dataTables.min.js"></script>
+        <script language="javascript" type="text/javascript" src="../javascript/root/jquery-popup.js"></script>
+        <script language="javascript" type="text/javascript" src="../javascript/root/dataTables.dateSort.js"></script>
+        <script language="javascript" type="text/javascript" src="../javascript/root/jQueryCustomFunctions.js"></script>
+        <script language="javascript" type="text/javascript" src="../javascript/root/jquery.wresize.js"></script>
+        <script language="javascript" type="text/javascript" src="../javascript/root/date.format.js"></script>
+        <script language="javascript" type="text/javascript" src="../javascript/reports/Logger.js"></script>
+        <script language="javascript" type="text/javascript" src="../javascript/reports/Productivity.js"></script>
+
+        <script type="text/javascript">
+            var obj;
+            $(function() {
+                obj = new Productivity('productivityDivId');
+                obj.setup();
+            });
+        </script>
+    </head>
+    <body>
+        <div style="width: 100%;height: 30px;">
+            <div style="float: left;font-weight: bold;margin-top: 3px;">Work Group:</div>
+            <div id="workgroupSelectDivId" style="float: left;" ></div>
+            <div id="saveExcelDivId" style="float: right;margin-top: 3px;"></div>
+        </div>
+        <div id="productivityDivId"></div>
+    </body>
+</html>

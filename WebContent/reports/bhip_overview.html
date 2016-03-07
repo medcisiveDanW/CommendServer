@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BHIP Overview</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        
+        <link rel="stylesheet" type="text/css" href="../css/reports/reports_child.css" />
+        <link rel="stylesheet" type="text/css" href="../css/newBlue/jquery-ui-1.8.11.custom.css"  />
+        <link rel="stylesheet" type="text/css" href="../css/demo_page.css" />
+        <link rel="stylesheet" type="text/css" href="../css/demo_table.css" />
+        <link rel="stylesheet" type="text/css" href="../css/demo_table_jui.css" />
+
+        <script language="javascript" type="text/javascript" src="../javascript/root/jquery-1.5.1.min.js"></script>
+        <script language="javascript" type="text/javascript" src="../javascript/root/jquery-ui-1.8.11.custom.min.js"></script>
+        <script language="javascript" type="text/javascript" src="../javascript/root/date.js"></script>
+        <script language="javascript" type="text/javascript" src="../javascript/root/jquery.dataTables.min.js"></script>
+        <script language="javascript" type="text/javascript" src="../javascript/root/jquery-popup.js"></script>
+        <script language="javascript" type="text/javascript" src="../javascript/root/dataTables.dateSort.js"></script>
+        <script language="javascript" type="text/javascript" src="../javascript/root/jQueryCustomFunctions.js"></script>
+        <script language="javascript" type="text/javascript" src="../javascript/root/jquery.wresize.js"></script>
+        <script language="javascript" type="text/javascript" src="../javascript/root/date.format.js"></script>
+        <script language="javascript" type="text/javascript" src="../javascript/reports/Logger.js"></script>
+        <script language="javascript" type="text/javascript" src="../javascript/reports/BHIP.js"></script>
+
+        <script type="text/javascript">
+            var obj;
+            $(function() {
+                $('#TodayButtonId').button();
+                obj = new BHIP('BHIPTeamDivId');
+                obj.setup();
+            });
+        </script>
+    </head>
+    <body>
+        <div style="width: 30%; height: 30px; float: left;"></div>
+        <div id="BHIPTeamSelectDivId" style="width: 30%; height: 30px; float: left; text-align: center;" ></div>
+        <div style="width: 38%; height: 30px; float: right;" ><div style="float: left;" ><button id="TodayButtonId">Today</button></div></div>
+        <div id="BHIPTeamDivId"></div>
+        <div id="popupDivId" style="display: none;"></div>
+    </body>
+</html>

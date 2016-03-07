@@ -1,0 +1,62 @@
+.tm-label {
+    float: right;
+}
+
+.tm-font {
+    font-weight: bold;
+    /*font-size: 2em;*/
+}
+
+
+.primSec {
+    height: 120px;
+}
+.primSec #primSecSelection{
+    position: absolute;
+    width: 45%;
+    top:  240px;
+    left:   20px;
+}
+.myButton {
+    width: 80px;
+}
+.TrtModeHeader {
+    position: absolute;
+    top: 25px;
+    align: center;
+}
+.TrtModeHeader td {
+    height: 25px;
+    text-align: center;
+    font: 1.3em;
+}
+.TrtModeNav td {
+    height: 25px;
+    text-align: center;
+    font: 1.3em;
+}
+.TrtModeOther {
+  position: absolute;
+  left: 600px;
+}
+.TrtModeOther td {
+    height: 25px;
+    text-align: center;
+    font: 1.0em;
+}
+.TrtModeTree {
+    border:solid 1px blue;
+}
+.TrtModeTree td {
+    height: 50px;
+    text-align: center;
+    font: 2em;
+    border:solid 1px red;
+}
+.aTrtCat {
+    background-color: #33A1C9;
+}
+.aTrt {
+    background: none;
+    background-color: #FF0000;
+}

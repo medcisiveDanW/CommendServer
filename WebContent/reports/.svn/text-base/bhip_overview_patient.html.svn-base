@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BHIP Patient Encounters</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <link rel="stylesheet" type="text/css" href="../css/reports/reports_child.css" />
+        <link rel="stylesheet" type="text/css" href="../css/newBlue/jquery-ui-1.8.11.custom.css"  />
+        <link rel="stylesheet" type="text/css" href="../css/demo_page.css" />
+        <link rel="stylesheet" type="text/css" href="../css/demo_table.css" />
+        <link rel="stylesheet" type="text/css" href="../css/demo_table_jui.css" />
+        
+        <script language="javascript" type="text/javascript" src="../javascript/root/jquery-1.5.1.min.js"></script>
+        <script language="javascript" type="text/javascript" src="../javascript/root/jquery-ui-1.8.11.custom.min.js"></script>
+        <script language="javascript" type="text/javascript" src="../javascript/root/jquery-popup.js"></script>
+        <script language="javascript" type="text/javascript" src="../javascript/root/jquery.dataTables.min.js"></script>
+        <script language="javascript" type="text/javascript" src="../javascript/root/jQueryCustomFunctions.js"></script>
+        <script language="javascript" type="text/javascript" src="../javascript/root/Utility.js"></script>
+        <script language="javascript" type="text/javascript" src="../javascript/reports/BHIPPatient.js"></script>
+        <script language="javascript" type="text/javascript">
+            var manager = new BHIPPatient();
+            socket.put('buttons',{});
+            socket.put('width',800);
+            socket.put('height',500);
+            $(function() {
+                manager.load();
+            });
+        </script>
+    </head>
+    <body >
+        <div id="clinicTimePopupDivId" style="display: none;"></div>
+        <div>
+            <div style="width: 100%; height: 20px;" >
+                <div style="float: left;" >
+                    <span class="bold">Patient Name: <a id="patientNameAId"></a></span>
+                </div>
+                <div style="float: right;" >
+                    <span class="bold">Team: <a id="bhipTeamNameId"></a></span>
+                </div>
+            </div>
+            <div id="bhipPatientEncounterDivId" style="width: 100%;"></div>
+        </div>
+    </body>
+</html>

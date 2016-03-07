@@ -1,0 +1,85 @@
+/*
+    Document   : dashboard
+    Created on : Sep 23, 2010, 10:04:00 AM
+    Author     : vhapalchambj
+    Description:
+        Purpose of the stylesheet follows.
+*/
+body, html {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    background-image: url('../images/background.jpg');
+    overflow:hidden;
+}
+.dashboard {
+    width: 689px;
+    height: 180px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+}
+.comTop {
+    background-image: url(../images/testdashboard2_01v2.gif);
+    width: 689px;
+    height: 50px;
+    display: block;
+}
+.comBottemLeft {
+    background-image: url(../images/testdashboard2_02.gif);
+    float: left;
+    width: 86px;
+    height: 30px;
+}
+.comBottemCen {
+    position:relative;
+    background-image: url(../images/testdashboard2_03.gif);
+    float: left;
+    width: 325px;
+    height: 30px;
+}
+.comBottemRight {
+    position:relative;
+    background-image: url(../images/testdashboard2_04.gif);
+    float: left;
+    width: 139px;
+    height: 30px;
+}
+.comBottemRightRight {
+    position:relative;
+    background-image: url(../images/testdashboard2_04.gif);
+    float: left;
+    width: 139px;
+    height: 30px;
+}
+.provider {
+    margin: 0px 100px;
+    padding-top: 20px;
+    font-size: 12pt;
+    font-weight: bold;
+    font-family: arial;
+    color:rgb(255,242,0)
+}
+.provider span{
+    font-size: 12pt;
+    font-weight: bold;
+    font-family: arial;
+    color:rgb(255,242,0)
+}
+.textArea {
+    position:absolute;
+    width: 100%;
+    height: 30px;
+    text-align: left;
+    padding-left: 15px;
+    top:0;
+    padding-top: 4px;
+}
+.nameClass {
+    font-size: 12pt;
+    font-weight: bold;
+    font-family: arial;
+    cursor: default;
+    float: left;
+    color:rgb(162,189,242);
+}

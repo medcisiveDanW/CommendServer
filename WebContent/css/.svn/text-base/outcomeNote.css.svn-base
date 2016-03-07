@@ -1,0 +1,188 @@
+/*
+    Document   : patientDetail
+    Created on : Nov 4, 2010, 1:08:32 PM
+    Author     : vhapalchambj
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root {
+    display: block;
+}
+body, html {
+    font-size: 12px;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-image: url('../images/background.jpg');
+}
+
+.header-table td {
+    border: 0px;
+}
+
+.header {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+#patientDetial {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+}
+#patientDetailHeader {
+    width: 100%;
+    margin-bottom: 8px;
+    display: block;
+}
+.patientDetailBody {
+    width: 99.5%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#patientDetailFooter {
+    width: 100%;
+    display: block;
+}
+#patientDetailGraphs {
+    display: inline;
+    width: 70%;
+    height: 495px;
+    float: left;
+}
+.patientDetailInfo {
+    display: inline;
+    padding-left: 1%;
+    width: 29%;
+    float: left;
+}
+.patientInformationBackground {
+    width: 100%;
+    border: 1px solid #28029d;
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #000000;
+    font-family:"Times New Roman", Times, serif;
+    margin-bottom: 5px;
+}
+.patientInformationBackground table{
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+.patientInformationCell {
+    border: 1px solid #28029d;
+    font-weight: bold;
+    color: #ffffff;
+    font-family:"Times New Roman", Times, serif;
+}
+
+.patientDetailHeaderContainer {
+    border: 1px solid #666666;
+    font-weight: bold;
+    color: #eeeeee;
+    width: 100%;
+    height: 50px;
+}
+#patientDetailHeaderTitle {
+    font-size: 18px;
+    display: block;
+}
+.patientDetailTextFormt {
+    padding-top: 5px;
+    font-size: 12px;
+}
+#patientDetailHeaderName {
+    display: inline;
+    float: left;
+}
+#patientDetailHeaderSSN {
+    display: inline;
+    float: left;
+    padding-left: 20px;
+}
+#patientDetialHeaderProvider {
+    display: inline;
+    padding-top: 30px;
+    float: right;
+    margin-right: 10px;
+}
+#patientDetailLogoVA {
+    display: inline;
+    width: 50px;
+    float: left;
+}
+#patientDetailLogoCommend {
+    width: 215px; height: 50px;
+    float: right;
+    display: inline;
+}
+#patientDetailHeaderTextContainer {
+    padding-top: 5px;
+    width: 35%;
+    height: 100%;
+    display: inline;
+    float: left;
+}
+/***************************Treatment Monitoring CSS***************************/
+.TrtMonContainer {
+   margin: 1%;
+   padding: 0;
+   width: 96%;
+   /*background-color: #fc9;*/
+}
+.TrtMonMidContainer {
+   margin: 1%;
+   padding: 0;
+   width: 96%;
+   border: 2px solid #4861E8;
+   background-color: #B4C6E8;
+}
+.TrtMonLeft {
+   float: left;
+   width: 40%;
+   margin: 1% 0 1% 1%;
+   padding: 1%;
+   /*background-color: #9cf;*/
+   color: #000;
+}
+.TrtMonRight {
+   float: left;
+   width: 53%;
+   margin: 1% 0 1% 1%;
+   padding: 1%;
+   /*background-color: #b99;*/
+   color: #000;
+}
+/**********************End of Treatment Monitoring CSS*************************/
+
+.savingOverlay {
+    display: none;
+}
+.savingOverlayBottom {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background-color:rgb(0,0,0);
+    filter:alpha(opacity=40);
+}
+.savingOverlayTop {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 400px;
+    height: 80px;
+    padding: 10px;
+    z-index: 11;
+    border: 2px solid black;
+    background-color:rgb(255,255,255);
+}
+.savingOverlayTop span {
+    font-size: 2.0em;
+    font-weight: bold;
+}

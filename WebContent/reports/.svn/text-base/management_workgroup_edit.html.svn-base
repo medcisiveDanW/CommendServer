@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Edit Group</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <link rel="stylesheet" type="text/css" href="../css/reports/reports_child.css" />
+        <link rel="stylesheet" type="text/css" href="../css/newBlue/jquery-ui-1.8.11.custom.css"  />
+        <link rel="stylesheet" type="text/css" href="../css/demo_page.css" />
+        <link rel="stylesheet" type="text/css" href="../css/demo_table.css" />
+        <link rel="stylesheet" type="text/css" href="../css/demo_table_jui.css" />
+        
+        <script language="javascript" type="text/javascript" src="../javascript/root/jquery-1.5.1.min.js"></script>
+        <script language="javascript" type="text/javascript" src="../javascript/root/jquery-ui-1.8.11.custom.min.js"></script>
+        <script language="javascript" type="text/javascript" src="../javascript/root/jquery-popup.js"></script>
+        <script language="javascript" type="text/javascript" src="../javascript/root/jquery.dataTables.min.js"></script>
+        <script language="javascript" type="text/javascript" src="../javascript/root/Utility.js"></script>
+        <script language="javascript" type="text/javascript" src="../javascript/reports/WorkgroupEdit.js"></script>
+        <script language="javascript" type="text/javascript">
+            var manager = new WorkgroupEdit();
+            socket.put('buttons',{});
+            socket.put('width',1050);
+            socket.put('height',500);
+            $(function() {
+                manager.load();
+            });
+        </script>
+    </head>
+    <body>
+        <div>
+            <div style="width: 100%; height: 25px;">
+                <div style="float: left;">
+                    <span class="bold">Group Name: </span><input type="text" id="groupNameTextId" name="" />
+                </div>
+                <div id="hiddinButtonDivId" style="float: left;padding-left: 10px;display: none;" >
+                    <small><button id="hiddinSaveGroupTitleButtonId">Save Group Name?</button></small>
+                </div>
+                <div style="float: right;">
+                    <span class="bold">Station: </span><input type="text" id="groupStationTextId" name="" />
+                </div>
+            </div>
+            <div style="width: 100%;">
+                <div style="float: left; width: 55%;">
+                    <fieldset>
+                        <legend><span class="bold">Current Providers</span></legend>
+                        <div id="groupDivId"></div>
+                    </fieldset>
+                </div>
+                <div style="float: left; width: 45%;">
+                    <fieldset>
+                        <legend><span class="bold">Available Providers</span></legend>
+                        <div id="availableDivId"></div>
+                    </fieldset>
+                </div>
+            </div>
+            <div style="float:left;width:100%;height:35px">
+                <div style="float:right; padding-top: 10px;"><button id="saveButtonID">Save</button></div>
+            </div>
+        </div>
+        <div id="clinicTimePopupDivId" style="display: none;"></div>
+    </body>
+</html>

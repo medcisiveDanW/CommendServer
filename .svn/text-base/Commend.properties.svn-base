@@ -1,0 +1,16 @@
+SOURCE_DB_SERVER=R01SCRDWH60
+SOURCE_DB_PORT=1433
+SOURCE_DB=Commend
+SOURCE_DB_USERNAME=
+SOURCE_DB_PASSWORD=
+TESTING=false
+SITE_ENABLED=true
+
+#log4j.rootLogger=DEBUG,DOSWN,LOGF
+#log4j.appender.DOSWN=org.apache.log4j.ConsoleAppender
+#log4j.appender.DOSWN.layout=org.apache.log4j.PatternLayout
+#log4j.appender.DOSWN.layout.ConversionPattern=%d %-5p %c - %m%n
+#log4j.appender.LOGF=org.apache.log4j.FileAppender
+#log4j.appender.LOGF.File=..\\webapps\\COMMEND\\log\\COMMENDServer.log
+#log4j.appender.LOGF.layout=org.apache.log4j.PatternLayout
+#log4j.appender.LOGF.layout.ConversionPattern=%d %-5p %c - %m%n

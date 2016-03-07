@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!--
+    Document   : reports
+    Created on : Dec 1, 2014, 10:00:18 AM
+    Author     : vhapalchambj
+-->
+<html>
+    <head>
+        <title>Reports</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" type="text/css" href="../css/reports/reports.css" />
+        <link rel="stylesheet" type="text/css" href="../css/newBlue/jquery-ui-1.8.11.custom.css" />
+
+        <script language="javascript" type="text/javascript" src="../javascript/root/jquery-1.5.1.min.js"></script>
+        <script language="javascript" type="text/javascript" src="../javascript/root/jquery-ui-1.8.11.custom.min.js"></script>
+        <script language="javascript" type="text/javascript" src="../javascript/root/date.js"></script>
+        <script language="javascript" type="text/javascript" src="../javascript/root/jquery.dataTables.min.js"></script>
+        <script language="javascript" type="text/javascript" src="../javascript/root/jquery-popup.js"></script>
+        <script language="javascript" type="text/javascript" src="../javascript/root/dataTables.dateSort.js"></script>
+        <script language="javascript" type="text/javascript" src="../javascript/root/jQueryCustomFunctions.js"></script>
+        <script language="javascript" type="text/javascript" src="../javascript/root/jquery.wresize.js"></script>
+        <script language="javascript" type="text/javascript" src="../javascript/root/date.format.js"></script>
+        <script language="javascript" type="text/javascript" src="../javascript/root/Utility.js"></script>
+        <script language="javascript" type="text/javascript" src="../javascript/reports/Reports.js"></script>
+
+        <script language="javascript" type="text/javascript" src="../javascript/root/jquery.mb.menu-2.9.6/inc/jquery.metadata.js"></script>
+        <script language="javascript" type="text/javascript" src="../javascript/root/jquery.mb.menu-2.9.6/inc/mbMenu.js"></script>
+        <script language="javascript" type="text/javascript" src="../javascript/root/jquery.mb.menu-2.9.6/inc/jquery.hoverIntent.js"></script>
+
+        <script type="text/javascript">
+            var clientWindowLockPatient = true;
+            var clientWindowLockSize = false;
+            var clientWindowLockPosition = false;
+            var clientWindowWidth = 1200;
+            var clientWindowHeight = 820;
+            var obj = null;
+            
+            $(function() {
+                obj = new Reports();
+                obj.setup();
+            });
+        </script>
+    </head>
+    <body>
+        <table style="width: 100%;" border="0">
+            <tr>
+                <td>
+                    <table style="width: 100%;" border="0">
+                        <tr>
+                            <td>
+                                <img align="left" src="../images/VAlogo.gif" style="width: 50px; height: 50px;" alt="VAlogo"/>
+                            </td>
+                            <td width="100%">
+                                <a id="providerNameId" class="provider">Test Provider</a>
+                                <table class="myMenu rootVoices" cellspacing='0' cellpadding='0' border='0'>
+                                    <tr> 
+                                        <td class="rootVoice {menu: 'performance_tracking'}">Performance Tracking</td> 
+                                        <td class="rootVoice {menu: 'bhip'}">BHIP Teams</td> 
+                                        <td class="rootVoice {menu: 'management'}" >Management</td>
+                                    </tr>
+                                </table>
+                                <div id="performance_tracking" class="mbmenu">
+                                    <a class="{action: 'loadPage(\'performance_productivity.html\',\'Productivity\')'}">Productivity</a>
+                                    <a class="{img: 'icon_14.png', menu:'performance_encounter'}">Encounter Statistics</a> 
+                                    <a class="{action: 'loadPage(\'performance_group.html\',\'Group Therapy Statistics\')'}">Group Therapy Statistics</a> 
+                                    <a class="{action: 'loadPage(\'performance_cpt.html\',\'CPT Patterns\')'}">CPT Patterns</a>
+                                </div>
+                                <div id="performance_encounter" class="mbmenu">
+                                    <a class="{action: 'loadPage(\'performance_encounter_total.html\',\'Encounter Statistics Total\')'}">Total</a>
+                                    <a class="{action: 'loadPage(\'performance_encounter_clinic.html\',\'Encounter Statistics Clinic Load\')'}">Clinic Load</a>
+                                </div>
+                                <div id="bhip" class="mbmenu">
+                                    <a class="{action: 'loadPage(\'bhip_overview.html\',\'BHIP Overview\')'}">Overview</a>
+                                </div>
+                                <div id="management" class="mbmenu">
+                                    <a class="{action: 'loadPage(\'management_workgroup.html\',\'Manage Workgroups\')'}">Workgroup</a>
+                                    <a class="{action: 'loadPage(\'management_administrator.html\',\'Manage Administrators\')'}">Administrator</a>
+                                </div>
+                            </td>
+                            <td>
+                                <img align="right" src="../images/COMMENDlogo.gif" style="width: 215px; height: 50px;" alt="COMMENDlogo"/>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="div-base">
+                        <div id="headerDivId" class="ui-widget-header div-header">Unknown</div>
+                        <iframe id="reportsIframeId" ALLOWTRANSPARENCY="true" scrolling="no" frameborder="0" style="width: 100%;"></iframe>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

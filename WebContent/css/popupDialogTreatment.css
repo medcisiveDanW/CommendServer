@@ -1,0 +1,284 @@
+
+table {
+border-collapse:separate;
+border-spacing:0pt;
+}
+caption, th, td {
+font-weight:normal;
+text-align:left;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+content:"";
+}
+blockquote, q {
+quotes:"" "";
+}
+a{
+cursor: pointer;
+text-decoration:none;
+}
+br.both{
+clear:both;
+}
+#backgroundPopup{
+display:none;
+position:fixed;
+_position:absolute; /* hack for internet explorer 6*/
+height:100%;
+width:100%;
+top:0;
+left:0;
+background:#000000;
+border:1px solid #cecece;
+z-index:1;
+}
+#strPopup{
+display:none;
+position:relative;
+_position:absolute; /* hack for internet explorer 6*/
+height:280px;
+width:408px;
+background:#FFFFFF;
+border:2px solid #cecece;
+z-index:2;
+padding:12px;
+font-size:13px;
+}
+#strPopup h1{
+text-align:left;
+color:#6FA5FD;
+font-size:22px;
+font-weight:700;
+border-bottom:1px dotted #D3D3D3;
+padding-bottom:2px;
+margin-bottom:20px;
+}
+#strPopupClose{
+font-size:14px;
+line-height:14px;
+right:6px;
+top:4px;
+position:absolute;
+color:#6fa5fd;
+font-weight:700;
+display:block;
+}
+/*==== free form button */
+#gtmPopup{
+display:none;
+position:fixed;
+_position:absolute; /* hack for internet explorer 6*/
+height:700px;
+width:700px;
+background:#FFFFFF;
+border:2px solid #cecece;
+z-index:2;
+padding:12px;
+font-size:13px;
+}
+#gtmPopup h1{
+text-align:left;
+color:#6FA5FD;
+font-size:22px;
+font-weight:700;
+border-bottom:1px dotted #D3D3D3;
+padding-bottom:2px;
+margin-bottom:20px;
+}
+#gtmPopupClose{
+font-size:14px;
+line-height:14px;
+right:6px;
+top:4px;
+position:absolute;
+color:#6fa5fd;
+font-weight:700;
+display:block;
+}
+/*== end of free form button */
+
+/*==== custom button */
+#customPopup{
+display:none;
+background:#FFFFFF;
+height:650px;
+width:650px;
+z-index:2;
+}
+#sideEffectsPopup{
+display:none;
+position:absolute;
+_position:absolute; /* hack for internet explorer 6*/
+height:600px;
+width:770px;
+background:#FFFFFF;
+border:2px solid #cecece;
+z-index:2;
+padding:12px;
+font-size:13px;
+}
+#sideEffectsPopup h1{
+text-align:left;
+color:#6FA5FD;
+font-size:22px;
+font-weight:700;
+border-bottom:1px dotted #D3D3D3;
+padding-bottom:2px;
+margin-bottom:20px;
+}
+#sideEffectsPopupClose{
+font-size:14px;
+line-height:14px;
+right:6px;
+top:4px;
+position:absolute;
+color:#6fa5fd;
+font-weight:700;
+display:block;
+}
+#therapyModePopup{
+display:none;
+position:absolute;
+_position:absolute; /* hack for internet explorer 6*/
+height:400px;
+width:780px;
+background:#FFFFFF;
+border:2px solid #cecece;
+z-index:2;
+padding:12px;
+font-size:13px;
+}
+/*== end of custom button */
+
+#therapyButton{
+  height: 100px;
+  width: 45%;
+  margin-left: 0%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  background-color:#573DB2;
+  color:#ffffff;
+}
+#confirmTherapyTA{
+   display: inline;
+   float: right;
+   border: 5px solid #00ff00;
+}
+#symFunScaleButton{
+  height: 25%;
+  width: 90%;
+  margin-left: 0%;
+  margin-right: 0%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  background-color:#4861E8;
+  color:#ffffff;
+}
+#goalTracMsrsButton{
+  height: 25%;
+  width: 90%;
+  margin-left: 0%;
+  margin-right: 0%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  background-color:#4861E8;
+  color:#ffffff;
+}
+#customButton{
+  height: 25%;
+  width: 90%;
+  margin-left: 0%;
+  margin-right: 0%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  background-color:#4861E8;
+  color:#ffffff;
+}
+#sideEffectsButton{
+  height: 100px;
+  width: 45%;
+  margin-left: 0%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  background-color:#7462FF;
+  color:#ffffff;
+}
+#confirmEntriesTA{
+   top-margin:  20px;
+   left-margin: 50px;
+}
+#TrtMonContainer {
+   margin: 1%;
+   padding: 0;
+   width: 96%;
+   /*background-color: #fc9;*/
+}
+#TrtMonMidContainer {
+   margin: 1%;
+   padding: 0;
+   width: 96%;
+   border: 2px solid #4861E8;
+   background-color: #B4C6E8;
+}
+#TrtMonLeft {
+   float: left;
+   width: 40%;
+   margin: 1% 0 1% 1%;
+   padding: 1%;
+   /*background-color: #9cf;*/
+   color: #000;
+}
+
+#TrtMonRight {
+   float: left;
+   width: 53%;
+   margin: 1% 0 1% 1%;
+   padding: 1%;
+   /*background-color: #b99;*/
+   color: #000;
+}
+
+.clear {
+   height: 0;
+   font-size: 1px;
+   margin: 0;
+   padding: 0;
+   line-height: 0;
+   clear: both;
+}
+
+#TrtMonTherapyModeBt{
+  height: 100px;
+  width: 45%;
+  margin-left: 0%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  background-color:#573DB2;
+  color:#ffffff;
+}
+
+#TrtMonSideEffectsBt{
+  height: 100px;
+  width: 45%;
+  margin-left: 0%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  background-color:#7462FF;
+  color:#ffffff;
+}
+
+#TrtMonMiddleButton {
+  height: 25%;
+  width: 90%;
+  margin-left: 0%;
+  margin-right: 0%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  background-color:#4861E8;
+  color:#ffffff;
+
+}
+
+.TrtMonTA {
+  font-size: 14px;
+}

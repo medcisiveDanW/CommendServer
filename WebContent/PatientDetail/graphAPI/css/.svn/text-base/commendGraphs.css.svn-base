@@ -1,0 +1,85 @@
+/* 
+    Document   : commendGraphs
+    Created on : Nov 10, 2010, 10:54:04 AM
+    Author     : vhapalchambj
+    Description:
+        Purpose of the stylesheet follows.
+*/
+body {
+    font-size: 12px;
+    margin: 0px;
+    padding: 0px;
+}
+#commendGraphsBody {
+    width: 100%;
+    height: 470px;
+    overflow:hidden;
+    position: relative;
+    /*background-color: rgb(232,232,232);*/
+    top: 0px;
+    left: 0px;
+}
+#commendGraphsMeasures {
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    position:absolute;
+    z-index: 1;
+}
+#commendGraphsMedTherapy {
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    position:absolute;
+    z-index: 1;
+}
+#commendGraphsMesuresOptionContainer {
+    display: block;
+    padding: 0px;
+    margin: 0px;
+        overflow: hidden;
+}
+#commendGraphsMedicationOptionContainer {
+    display: block;
+    padding: 0px;
+    margin: 0px;
+}
+#commendGraphsMeasuresBody td {
+    text-align: center;
+}
+#commendGraphsOptionBody {
+    display: block;
+    width: 100%;
+}
+.subBodyX4 {
+    font-family:"Times New Roman", Times, serif;
+    font-size: 1.1em;
+    font-weight: bold;
+    display: inline;
+    width: 24.95%;
+    float: left;
+}
+.subBodyX3 {
+    font-family:"Times New Roman", Times, serif;
+    font-size: 1.1em;
+    font-weight: bold;
+    display: inline;
+    width: 33.3%;
+    float: left;
+}
+.subBodyX2 {
+    font-family:"Times New Roman", Times, serif;
+    font-size: 1.1em;
+    font-weight: bold;
+    display: inline;
+    width: 49.9%;
+    float: left;
+}
+.commendGraphsCenter {
+    text-align: center;
+}
+.commendGraphsFormatCell {
+    padding-left: 20px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
